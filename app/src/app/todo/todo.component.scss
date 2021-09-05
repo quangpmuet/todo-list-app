@@ -1,0 +1,158 @@
+
+.form-group {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.input-new-task {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-description {
+  height: 100px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+.form-controls {
+  padding: 20px 40px 0 40px;
+}
+
+
+.btn-add {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;;
+  margin-top: 20px;
+}
+
+.btn-add:hover {
+  background-color: #45a049;
+}
+
+.text-center {
+  text-align: center;;
+}
+
+input, textarea {
+  width: -webkit-fill-available;
+}
+
+.invalid-mess {
+  color: #ff1428;
+  font-size: 11px;
+}
+
+.card {
+  padding: 1.2rem;
+}
+
+.form-group-input {
+  width: 46%;
+
+  .half-input {
+    width: 100%;
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.gr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cs-datepicker {
+  position: relative;
+
+  .btn-pick-date {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(calc(-50% - calc(1.34375em / 2)));
+  }
+}
+
+.detail-list {
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color:#f2f2f2;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .icon-name {
+    display: flex;
+    align-items: center;
+
+    .name-task {
+      margin-left: 10px;
+    }
+  }
+
+  .btn {
+    .btn-detail {
+      background-color: #5bbbea;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .btn-remove {
+      background-color: #b34040;
+      color: white;
+    }
+  }
+
+}
+
+.dialog-wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .dialog {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .dialog-header {
+    position: relative;
+
+    .btn-close {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .resp {
+    flex-wrap: wrap !important;
+    .sub-reps {
+      width: 100% !important;
+    }
+  }
+}
